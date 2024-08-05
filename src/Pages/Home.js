@@ -3,28 +3,28 @@ import georgesImage from "../assets/georges.jpeg";
 import LearnMore from "../Components/LearnMoreButton";
 import ExploreProjectsButton from "../Components/ExploreProjectsButton";
 
-import ProjectsGrid from "../Components/ProjectsGrid";
+// import ProjectsGrid from "../Components/ProjectsGrid";
 
-const projects = [
-  {
-    id: 1,
-    title: "Project 1",
-    description: "This is the first project",
-    image: "https://via.placeholder.com/150",
-  },
-  {
-    id: 2,
-    title: "Project 2",
-    description: "This is the second project",
-    image: "https://via.placeholder.com/150",
-  },
-  {
-    id: 3,
-    title: "Project 3",
-    description: "This is the third project",
-    image: "https://via.placeholder.com/150",
-  },
-];
+// const projects = [
+//   {
+//     id: 1,
+//     title: "Project 1",
+//     description: "This is the first project",
+//     image: "https://via.placeholder.com/150",
+//   },
+//   {
+//     id: 2,
+//     title: "Project 2",
+//     description: "This is the second project",
+//     image: "https://via.placeholder.com/150",
+//   },
+//   {
+//     id: 3,
+//     title: "Project 3",
+//     description: "This is the third project",
+//     image: "https://via.placeholder.com/150",
+//   },
+// ];
 
 const Home = () => {
   return (
