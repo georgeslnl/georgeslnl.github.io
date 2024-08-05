@@ -31,7 +31,7 @@ const Home = () => {
     <div className="w-screen my-24 px-6">
       <div className="max-w-6xl m-auto">
         <div className="md:flex md:flex-row md:justify-between md:items-center flex flex-col-reverse gap-2 justify-center items-center ">
-          <h1 className="font-extrabold text-4xl md:text-8xl bg-gradient-to-r from-primary-500 to-secondary-500 bg-clip-text text-transparent w-fit pb-1 md:pb-2">
+          <h1 className="font-extrabold text-5xl md:text-8xl bg-gradient-to-r from-primary-500 to-secondary-500 bg-clip-text text-transparent w-fit pb-1 md:pb-2">
             Georges Linel
           </h1>
           <img
@@ -46,7 +46,7 @@ const Home = () => {
         I've tackled diverse projects, and am always eager to learn more.
         Explore my portfolio to see how I bridge the gap between code and creative solutions.
         </p>
-        <div className="flex flex-row justify-between lg:flex lg:flex-col lg:gap-2">
+        <div className="flex flex-row justify-around lg:flex lg:flex-col lg:gap-2">
         <LearnMore />
         <ExploreProjectsButton />
         </div>
