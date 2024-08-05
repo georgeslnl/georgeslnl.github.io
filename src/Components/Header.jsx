@@ -1,11 +1,11 @@
 import React from "react";
 import NavBar from "./NavBar";
-import HomeIcon from "./HomeIcon";
+import TopRightIcons from "./HomeIcon";
 
-export default function Header() {
+export default function Header({darkMode, toggleDarkMode}) {
     return (
         <div className="flex justify-between p-4">
-            <HomeIcon />
+            <TopRightIcons darkMode={darkMode} onClick={toggleDarkMode}/>
             <NavBar />
         </div>
     );
