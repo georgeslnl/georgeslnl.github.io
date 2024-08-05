@@ -6,6 +6,7 @@ import Projects from "./Pages/Projects";
 import Contact from "./Pages/Contact";
 import Header from "./Components/Header";
 import Footer from "./Components/Footer";
+import MainLayout from "./Layout/MainLayout";
 
 function App() {
   return (

@@ -1,7 +1,9 @@
 import React from "react";
 import georgesImage from "../assets/georges.jpeg";
+import Image from "../assets/IMG_5878.jpeg"
 import LearnMore from "../Components/LearnMoreButton";
 import ExploreProjectsButton from "../Components/ExploreProjectsButton";
+import MainLayout from "../Layout/MainLayout";
 
 // import ProjectsGrid from "../Components/ProjectsGrid";
 
