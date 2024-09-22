@@ -3,7 +3,7 @@ import { IoPersonCircleSharp } from "react-icons/io5";
 
 export default function BackgroundCard() {
     return (
-        <div className="lg:col-span-2 lg:col-start-1 lg:row-start-1 hover:shadow-md m-auto bg-secondary-200 p-8 rounded-2xl flex flex-col gap-1 items-start">
+        <div className="lg:col-span-2 lg:col-start-1 lg:row-start-1 shadow-lg m-auto bg-secondary-200 p-8 rounded-2xl flex flex-col gap-1 items-start">
             <div className="flex flex-row-reverse items-center gap-2">
             <IoPersonCircleSharp className="text-3xl text-text-900"/>
             <h1 className="text-3xl font-semibold text-text-900 text-end">Background</h1>

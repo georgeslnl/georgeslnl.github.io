@@ -24,7 +24,7 @@ function App() {
 
 
   return (
-    <div className="font-ubuntu bg-background-50 min-h-svh">
+    <div>
       <Router>
         <Header darkMode={darkMode} toggleDarkMode={toggleDarkMode}/>
         <Routes>

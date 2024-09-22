@@ -3,6 +3,9 @@
 @tailwind utilities;
 
 @layer base {
+  body {
+    @apply bg-background-50 min-h-svh font-ubuntu;
+  }
   :root {
     --text-50: #f0f6ee;
     --text-100: #e1eedd;

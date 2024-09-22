@@ -1,11 +1,34 @@
 import React from 'react';
 
-export default function ProjectCard({ title, description, image }) {
+const ProjectCard = ({ project }) => {
+    const abstractParagraphs = project.abstract.split('\n\n');
+
     return (
-        <div className="w-64 h-64 snap-center flex flex-shrink-0 flex-col items-center justify-between bg-secondary-100 shadow-lg rounded-lg overflow-hidden hover:bg-secondary-200 hover:shadow-md cursor-pointer transition-all p-4">
-                <h1 className="text-xl font-semibold">{title}</h1>
-                <p className="text-justify">{description}</p>
-                <img src={image} alt={title} className="w-3/4 h-32 object-cover object-center" />
+        <div className="rounded-lg p-6 max-w-2xl mx-auto my-8 bg-secondary-50 shadow-2xl">
+            <h2 className="text-2xl text-text-950 font-bold mb-2">{project.title}</h2>
+            <p className="text-text-800">{project.shortDescription}</p>
+            <p className="text-text-700 mb-4 italic">{project.date}</p>
+            {abstractParagraphs.map((paragraph, index) => (
+                <p key={index} className="text-text-950 mb-4 ">{paragraph}</p>
+            ))}
+            {project?.github && (
+                <p className="text-secondary-400 underline mb-4">
+                    <a href={project?.github}>Github</a>
+                </p>
+            )}
+            {project.videoUrl && (
+                <div className="flex justify-center">
+                    <iframe 
+                        src={project.videoUrl}
+                        className="w-1/2 h-" 
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                        allowFullScreen
+                        title={`${project.title}`}
+                    ></iframe>
+                </div>
+            )}
         </div>
     );
-}
+};
+
+export default ProjectCard;
