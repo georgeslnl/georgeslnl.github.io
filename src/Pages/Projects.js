@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import ProjectCard from "../Components/ProjectCard";
 import { IoArrowForwardSharp, IoArrowBackSharp } from "react-icons/io5";
 
@@ -52,6 +52,23 @@ const Projects = () => {
   const handlePrevious = () => {
     setCurrentIndex((prevIndex) => Math.max(prevIndex - 1, 0));
   };
+
+  // useEffect with listener for keyboard events
+    useEffect(() => {
+        const handleKeyPress = (e) => {
+        if (e.key === "ArrowRight") {
+            handleNext();
+        } else if (e.key === "ArrowLeft") {
+            handlePrevious();
+        }
+        };
+    
+        window.addEventListener("keydown", handleKeyPress);
+    
+        return () => {
+        window.removeEventListener("keydown", handleKeyPress);
+        };
+    }, []);
 
   return (
     <div className="w-full px-4 md:px-6 flex flex-col">

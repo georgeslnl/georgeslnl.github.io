@@ -4,7 +4,7 @@ const ProjectCard = ({ project }) => {
     const abstractParagraphs = project.abstract.split('\n\n');
 
     return (
-        <div className="rounded-lg p-6 max-w-2xl mx-auto my-8 bg-secondary-50 shadow-2xl">
+        <div className="rounded-lg p-6 max-w-2xl mx-auto bg-secondary-50 shadow-2xl">
             <h2 className="text-2xl text-text-950 font-bold mb-2">{project.title}</h2>
             <p className="text-text-800">{project.shortDescription}</p>
             <p className="text-text-700 mb-4 italic">{project.date}</p>
