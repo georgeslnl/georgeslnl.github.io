@@ -72,7 +72,7 @@ const Projects = () => {
 
   return (
     <div className="w-full px-4 md:px-6 flex flex-col">
-      <h1 className="font-extrabold text-5xl md:text-8xl bg-gradient-to-r from-primary-500 to-secondary-500 bg-clip-text text-transparent w-fit pb-1 md:pb-2 mt-10 mb-8">
+      <h1 className="font-extrabold text-5xl md:text-8xl bg-gradient-to-r from-primary-500 to-secondary-500 bg-clip-text text-transparent w-fit pb-1 md:pb-2 mt-10 mb-6">
         Projects
       </h1>
       <div className="flex justify-center items-start">
@@ -85,7 +85,7 @@ const Projects = () => {
               <IoArrowBackSharp size={24} />
             </button>
           )}
-          <div className="w-3/4 sm:w-full max-w-lg sm:max-w-2xl mx-auto">
+          <div className="w-3/4 mb-8 sm:w-full max-w-lg sm:max-w-2xl mx-auto">
             <ProjectCard project={projects[currentIndex]} />
           </div>
           {currentIndex < projects.length - 1 && (
