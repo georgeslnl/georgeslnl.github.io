@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/static/css/main.43a8a321.css",
-    "main.js": "/static/js/main.c4f6c4bb.js",
+    "main.css": "/static/css/main.88575eb7.css",
+    "main.js": "/static/js/main.7e06ca39.js",
     "static/js/453.1407b060.chunk.js": "/static/js/453.1407b060.chunk.js",
     "static/media/Georges_Linel_CV.pdf": "/static/media/Georges_Linel_CV.3c2f8996ed4d7ed04757.pdf",
     "static/media/georges.jpeg": "/static/media/georges.8c28b0c8efefdbde90bf.jpeg",
     "index.html": "/index.html",
-    "main.43a8a321.css.map": "/static/css/main.43a8a321.css.map",
-    "main.c4f6c4bb.js.map": "/static/js/main.c4f6c4bb.js.map",
+    "main.88575eb7.css.map": "/static/css/main.88575eb7.css.map",
+    "main.7e06ca39.js.map": "/static/js/main.7e06ca39.js.map",
     "453.1407b060.chunk.js.map": "/static/js/453.1407b060.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.43a8a321.css",
-    "static/js/main.c4f6c4bb.js"
+    "static/css/main.88575eb7.css",
+    "static/js/main.7e06ca39.js"
   ]
 }
