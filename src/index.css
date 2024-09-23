@@ -4,7 +4,7 @@
 
 @layer base {
   body {
-    @apply bg-background-50 min-h-svh font-ubuntu;
+    @apply bg-background-50 h-svh font-ubuntu;
   }
   :root {
     --text-50: #f0f6ee;
