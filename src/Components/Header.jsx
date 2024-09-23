@@ -1,6 +1,6 @@
 import React from "react";
 import NavBar from "./NavBar";
-import TopLeftIcons from "./HomeIcon";
+import TopLeftIcons from "./TopLeftIcons";
 
 export default function Header({darkMode, toggleDarkMode}) {
     return (
