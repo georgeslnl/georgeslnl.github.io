@@ -49,7 +49,7 @@ const Home = () => {
         Explore my portfolio to see how I bridge the gap between code and creative solutions.
         </p>
         <div className="flex flex-row gap-2 items-center mb-8 ">
-        <IoMail size={20}/> 
+        <IoMail size={20} className="text-text-900"/> 
         <p className="text-base md:text-lg text-text-950 font-semibold">georges.lnl01@gmail.com</p>
         </div>
         <div className="flex flex-row justify-around lg:flex lg:flex-col lg:gap-2">
