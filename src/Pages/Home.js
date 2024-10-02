@@ -5,28 +5,6 @@ import ExploreProjectsButton from "../Components/ExploreProjectsButton";
 import { IoMail } from "react-icons/io5";
 
 
-// import ProjectsGrid from "../Components/ProjectsGrid";
-
-// const projects = [
-//   {
-//     id: 1,
-//     title: "Project 1",
-//     description: "This is the first project",
-//     image: "https://via.placeholder.com/150",
-//   },
-//   {
-//     id: 2,
-//     title: "Project 2",
-//     description: "This is the second project",
-//     image: "https://via.placeholder.com/150",
-//   },
-//   {
-//     id: 3,
-//     title: "Project 3",
-//     description: "This is the third project",
-//     image: "https://via.placeholder.com/150",
-//   },
-// ];
 
 const Home = () => {
   return (
@@ -56,9 +34,6 @@ const Home = () => {
         <ExploreProjectsButton />
         <LearnMore />
         </div>
-        {/* <div className="flex flex-col items-center mt-16">
-      <ProjectsGrid projects={projects} />
-        </div> */}
       </div>
     </div>
   );
