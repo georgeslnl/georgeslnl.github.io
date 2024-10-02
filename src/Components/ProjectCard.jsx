@@ -4,7 +4,7 @@ const ProjectCard = ({ project }) => {
     const abstractParagraphs = project.abstract.split('\n\n');
 
     return (
-        <div className="rounded-lg p-6 max-w-2xl mx-auto bg-secondary-50 shadow-2xl border">
+        <div className="rounded-lg p-6 w-full mx-auto bg-secondary-50 shadow-2xl border">
             <h2 className="text-2xl text-text-950 font-bold mb-2">{project.title}</h2>
             <p className="text-text-800">{project.shortDescription}</p>
             <p className="text-text-700 mb-4 italic">{project.date}</p>
@@ -17,10 +17,10 @@ const ProjectCard = ({ project }) => {
                 </p>
             )}
             {project.videoUrl && (
-                <div className="flex justify-center">
+                <div className="w-full aspect-w-16 aspect-h-9">
                     <iframe 
                         src={project.videoUrl}
-                        className="w-1/2 h-" 
+                        className="w-full h-full" 
                         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
                         allowFullScreen
                         title={`${project.title}`}

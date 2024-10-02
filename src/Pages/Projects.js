@@ -79,22 +79,22 @@ const Projects = () => {
           {currentIndex > 0 && (
             <button
               onClick={handlePrevious}
-              className="absolute left-4 top-1/2 transform -translate-y-1/2 bg-gradient-to-r from-primary-500 to-secondary-500 hover:bg-gradient-to-r hover:from-secondary-500 hover:to-primary-500 text-white rounded-full p-2 transition duration-300"
+              className="text-base md:text-2xl absolute left-4 top-1/2 transform -translate-y-1/2 bg-gradient-to-r from-primary-500 to-secondary-500  text-white rounded-full p-2"
               aria-label="Previous project"
             >
-              <IoArrowBackSharp size={24} />
+              <IoArrowBackSharp/>
             </button>
           )}
-          <div className="w-3/4 mb-8 sm:w-full max-w-lg sm:max-w-2xl mx-auto">
+          <div className="w-3/4 mb-8 sm:w-full max-w-lg sm:max-w-3xl mx-auto">
             <ProjectCard project={projects[currentIndex]} />
           </div>
           {currentIndex < projects.length - 1 && (
             <button
               onClick={handleNext}
-              className="absolute right-4 top-1/2 transform -translate-y-1/2 bg-gradient-to-r from-primary-500 to-secondary-500 hover:bg-gradient-to-r hover:from-secondary-500 hover:to-primary-500 text-white rounded-full p-2 transition duration-300"
+              className="text-base md:text-2xl absolute right-4 top-1/2 transform -translate-y-1/2 bg-gradient-to-r from-primary-500 to-secondary-500 text-white rounded-full p-2"
               aria-label="Next project"
             >
-              <IoArrowForwardSharp size={24} />
+              <IoArrowForwardSharp className="" />
             </button>
           )}
         </div>

@@ -8,7 +8,7 @@ export default function CareerCard() {
             <IoBriefcase className="text-2xl text-text-900"/>
             <h1 className="text-3xl font-semibold text-text-900 lg:text-end">Career</h1>
             </div>
-            <p className="text-text-900 text-justify">Following my Bachelor's, I worked for 1 year in a healthcare communications agency as Senior Digital Campaigns Executive.
+            <p className="text-text-900 text-justify">Following my Bachelor's degree, I worked for 1 year in a healthcare communications agency as Senior Digital Campaigns Executive.
                 The company was a small agency, and I promptly adapted to the fast-paced environment and learned how to balance delivering high-quality projects with meeting
                 tight, ever-changing deadlines. As part of my role, I held weekly meetings with clients from Europe and Asia, which helped me improve my presentation skills and cultivate true professionalism.</p>
         </div>
