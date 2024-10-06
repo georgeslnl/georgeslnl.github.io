@@ -5,7 +5,6 @@ import Home from "./Pages/Home";
 import Projects from "./Pages/Projects";
 import Contact from "./Pages/Contact";
 import Header from "./Components/Header";
-import Footer from "./Components/Footer";
 
 function App() {
   const [darkMode, setDarkMode] = useState(false);
@@ -24,16 +23,16 @@ function App() {
 
 
   return (
-    <div>
+    <div className='min-h-screen'>
       <Router>
         <Header darkMode={darkMode} toggleDarkMode={toggleDarkMode}/>
+        <main className="flex-grow">
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
           <Route path="/projects" element={<Projects />} />
-          <Route path="/contact" element={<Contact />} />
         </Routes>
-        <Footer />
+        </main>
       </Router>
     </div>
   );
