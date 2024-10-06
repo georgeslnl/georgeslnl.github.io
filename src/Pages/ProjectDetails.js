@@ -19,16 +19,16 @@ const ProjectDetails = ({ projects }) => {
           <div className="w-full md:w-3/4 aspect-w-16 aspect-h-9 md:aspect-h-6">
             <iframe 
               src={project.videoUrl}
-              className="w-full h-full" 
+              className="w-full h-full border rounded-lg" 
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
               allowFullScreen
               title={`${project.title}`}
             ></iframe>
           </div>
         )}
-        <div className="bg-secondary-50 rounded-lg p-6 shadow-xl">
-          <p className="text-text-700 mb-4 italic">{project.date}</p>
-          <p className="text-text-900 mb-4">{project.shortDescription}</p>
+        <div className="bg-secondary-50 rounded-lg p-6 shadow-xl border">
+          <p className="text-text-700 italic">{project.date}</p>
+          <p className="text-text-700 mb-4">{project.shortDescription}</p>
           {project.abstract.split('\n\n').map((paragraph, index) => (
             <p key={index} className="text-text-950 mb-4">{paragraph}</p>
           ))}

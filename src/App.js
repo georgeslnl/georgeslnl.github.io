@@ -86,16 +86,19 @@ function App() {
 
 
   return (
-    <div className='min-h-screen'>
+    <div className='min-h-screen flex flex-col pb-8'>
       <Router>
         <Header darkMode={darkMode} toggleDarkMode={toggleDarkMode}/>
-        <main className="flex-grow">
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/about" element={<About />} />
-          <Route path="/projects" element={<Projects projects={projects} />} />
-          <Route path="/projects/:id" element={<ProjectDetails projects={projects} />} />
-        </Routes>
+        <main className="flex-grow flex flex-col">
+          <div className="flex-grow">
+            <Routes>
+              <Route path="/" element={<Home />} />
+              <Route path="/about" element={<About />} />
+              <Route path="/projects" element={<Projects projects={projects} />} />
+              <Route path="/projects/:id" element={<ProjectDetails projects={projects} />} />
+            </Routes>
+          </div>
+          {/* <div className="h-24"></div> This adds space at the bottom */}
         </main>
       </Router>
     </div>
