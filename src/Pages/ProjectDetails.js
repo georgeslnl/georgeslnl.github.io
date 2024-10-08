@@ -26,19 +26,31 @@ const ProjectDetails = ({ projects }) => {
             ></iframe>
           </div>
         )}
+        {project.image && (
+            <img 
+              src={project.image} 
+              alt={project.title} 
+              className="rounded-lg w-full md:w-3/4 shadow-xl"
+            />
+        )}
         <div className="bg-secondary-50 rounded-lg p-6 shadow-xl border">
           <p className="text-text-700 italic">{project.date}</p>
-          <p className="text-text-700 mb-4">{project.shortDescription}</p>
+          <p className="text-text-700">{project.shortDescription}</p>
+          {project.deployedLink ? (
+            <p className="text-text-700 font-semibold underline mb-4">
+              <a href={project.deployedLink} target="_blank" rel="noopener noreferrer">Try it!</a>
+            </p>
+          ) : null}
           {project.abstract.split('\n\n').map((paragraph, index) => (
-            <p key={index} className="text-text-950 mb-4">{paragraph}</p>
+            <p key={index} className="text-text-950 mt-4">{paragraph}</p>
           ))}
           {project.github && (
-            <p className="text-secondary-400 underline mb-4">
+            <p className="text-secondary-400 underline mt-4">
               <a href={project.github} target="_blank" rel="noopener noreferrer">GitHub Repository</a>
             </p>
           )}
           {project.skills && (
-            <p className="text-text-800">
+            <p className="text-text-800 mt-5">
               <strong>Skills:</strong> {project.skills.join(", ")}
             </p>
           )}
