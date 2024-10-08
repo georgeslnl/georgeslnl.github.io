@@ -14,7 +14,7 @@ const Projects = ({ projects }) => {
         {projects.map((project, index) => (
           <div
             key={index}
-            className="hover:scale-110 cursor-pointer transition-all duration-300"
+            className="hover:scale-110 cursor-pointer transition-all duration-300 min-h-full h-full"
           >
             <ProjectCard project={project} />
           </div>
