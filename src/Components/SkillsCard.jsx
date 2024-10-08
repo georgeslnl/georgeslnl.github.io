@@ -3,7 +3,7 @@ import { AiFillTool } from "react-icons/ai";
 
 export default function SkillsCard() {
     return (
-        <div className="lg:col-span-2 lg:col-start-3 lg:row-start-4 shadow-lg m-auto bg-background-200 p-8 rounded-2xl flex flex-col gap-1 items-center lg:items-start">
+        <div className="lg:col-span-2 lg:col-start-3 lg:row-start-4 shadow-xl hover:shadow-2xl border bg-secondary-50  p-8 rounded-lg flex flex-col gap-1 items-center lg:items-start animate-fadeIn lg:animate-slow lg:animate-fadeInRight">
             <div className="flex items-center gap-2">
             <AiFillTool className="text-3xl text-text-900"/>
             <h1 className="text-3xl font-semibold text-text-900 lg:text-end">Skills</h1>

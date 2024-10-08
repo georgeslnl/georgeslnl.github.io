@@ -1,5 +1,8 @@
 /** @type {import('tailwindcss').Config} */
-module.exports = {
+const { withAnimations } = require('animated-tailwindcss')
+
+
+module.exports = withAnimations({
   content: ["./src/**/*.{js,jsx,ts,tsx}"],
   darkMode: 'class',
   theme: {
@@ -80,4 +83,4 @@ module.exports = {
   plugins: [
     require('@tailwindcss/aspect-ratio'),
   ],
-};
+})

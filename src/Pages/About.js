@@ -11,14 +11,12 @@ const About = () => {
       <h1 className="font-extrabold text-5xl md:text-8xl bg-gradient-to-r from-primary-500 to-secondary-500 bg-clip-text text-transparent w-fit pb-1 md:pb-2 my-2">
         About Me
       </h1>
-      <div className="grid grid-flow-row gap-10 grid-cols-1 lg:grid-cols-4 lg:grid-rows-4 lg:gap-2 p-2">
+        <DownloadCVButton fileName="Georges_Linel_CV.pdf" />
+      <div className="w-full lg:w-11/12 m-auto grid grid-cols-1 lg:grid-cols-4 gap-10 lg:gap-4">
         <BackgroundCard />
         <EducationCard />
-        <CareerCard />
         <SkillsCard />
-      </div>
-      <div className="flex flex-col items-center mb-8">
-        <DownloadCVButton fileName="Georges_Linel_CV.pdf" />
+        <CareerCard />
       </div>
     </div>
   );

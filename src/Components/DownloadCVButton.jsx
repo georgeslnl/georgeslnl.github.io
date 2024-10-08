@@ -5,16 +5,14 @@ import { AiFillFilePdf } from "react-icons/ai";
 
 const CVDownloadButton = ({ fileName }) => {
   return (
-    <div className='flex justify-center items-center gap-2 w-fit p-4 text-background-50 text-lg rounded-lg bg-primary-500 hover:bg-primary-300 cursor-pointer hover:text-background-50 transition-all'>
-        <AiFillFilePdf className="text-lg"/>
+    <div className='flex justify-center items-center gap-2 w-fit p-4 text-background-50 text-lg rounded-lg bg-gradient-to-r from-primary-500 to-secondary-500 hover:scale-110 cursor-pointer hover:text-background-50 transition-all duration-300'>
+        {/* <AiFillFilePdf className="text-lg"/> */}
     <a
       href={CV}
       download={fileName}
       className=""
-    >
-        
-      Download CV
-      
+    >   
+      Download CV 
     </a>
     </div>
   );
