@@ -8,9 +8,9 @@ import artventure from "../assets/ARTventure.jpeg";
 
 const Home = () => {
   return (
-    <div className="p-24 mx-24">
+    <div className="">
         
-          <h1 className="font-averageSans text-center font-semibold text-5xl md:text-5xl bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent w-fit pb-1 md:pb-2">
+          <h1 className="font-bold text-5xl md:text-5xl bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent w-fit pb-1 md:pb-2 mb-16">
             Georges Linel
           </h1>
           {/* <img

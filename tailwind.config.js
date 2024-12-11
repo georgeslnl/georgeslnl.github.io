@@ -16,9 +16,7 @@ module.exports = withAnimations({
        },
        
       fontFamily: {
-        averageSans: ["Average Sans", "sans-serif"],
-        cormorant: ["Cormorant", "serif"],
-        cinzel: ["Cinzel Decorative", "serif"],
+        plusRounded: ["'M PLUS Rounded 1c'", "sans-serif"],
       },
     },
   },

@@ -1,7 +1,8 @@
 import React from 'react';
 import { useParams } from 'react-router-dom';
+import projects from '../data/projectsData';
 
-const ProjectDetails = ({ projects }) => {
+const ProjectDetails = () => {
   const { id } = useParams();
   const project = projects.find(p => p.id === id);
 
@@ -10,34 +11,36 @@ const ProjectDetails = ({ projects }) => {
   }
 
   return (
-    <div className="w-screen px-8 flex flex-col">
-      <h1 className="font-extrabold text-5xl xl:text-8xl bg-gradient-to-r from-primary-500 to-secondary-500 bg-clip-text text-transparent w-fit pb-1 xl:pb-2 my-2">
+    <div className="flex flex-col">
+      {/* TO-DO: add back button */}
+      <h1 className="font-bold text-5xl md:text-5xl bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent w-fit pb-1 md:pb-2 mb-16">
         {project.title}
       </h1>
-      <div className="container m-auto p-2 md:p-4 w-11/12 flex flex-col items-center gap-4 ">
-        {project.videoUrl && (
-          <div className="w-full md:w-3/4 aspect-w-16 aspect-h-9 md:aspect-h-6">
+      <div className="container flex flex-col items-center gap-4 text-text text-base font-medium">
+        {project.videoUrl ? (
+          <div className="w-full aspect-w-16 md:aspect-h-9">
             <iframe 
               src={project.videoUrl}
-              className="w-full h-full border rounded-lg" 
+              className="w-full h-full border" 
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
               allowFullScreen
+              quality="high"
               title={`${project.title}`}
             ></iframe>
           </div>
-        )}
-        {project.image && (
-            <img 
-              src={project.image} 
-              alt={project.title} 
-              className="rounded-lg w-full md:w-3/4 shadow-xl"
-            />
-        )}
-        <div className="bg-secondary-50 rounded-lg p-6 shadow-xl border">
-          <p className="text-text-700 italic">{project.date}</p>
-          <p className="text-text-700">{project.shortDescription}</p>
+        ) : (
+          <img 
+            src={project.image} 
+            alt={project.title} 
+            className= "shadow-lg border"
+          />
+      )}
+        <div className= "w-3/4 p-2">
+          {/* <p className=" italic">{project.date}</p> */}
+          <p className="">{project.shortDescription}</p>
+          {/* TO-DO: add icon */}
           {project.deployedLink ? (
-            <p className="text-text-700 font-semibold underline mb-4">
+            <p className="font-semibold underline mb-4">
               <a href={project.deployedLink} target="_blank" rel="noopener noreferrer">Try it!</a>
             </p>
           ) : null}
@@ -45,16 +48,21 @@ const ProjectDetails = ({ projects }) => {
             <p key={index} className="text-text-950 mt-4">{paragraph}</p>
           ))}
           {project.github && (
-            <p className="text-secondary-400 underline mt-4">
+            <p className="font-bold mt-4">
               <a href={project.github} target="_blank" rel="noopener noreferrer">GitHub Repository</a>
             </p>
           )}
           {project.skills && (
-            <p className="text-text-800 mt-5">
+            <p className="mt-5">
               <strong>Skills:</strong> {project.skills.join(", ")}
             </p>
           )}
         </div>
+        {project.videoUrl && (<img 
+            src={project.image} 
+            alt={project.title} 
+            className= "shadow-lg border"
+          />)}
       </div>
     </div>
   );

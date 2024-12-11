@@ -108,8 +108,7 @@ function App() {
     <div className="min-h-screen flex flex-col">
       <Router>
         {/* <Header darkMode={darkMode} toggleDarkMode={toggleDarkMode} /> */}
-        <main className="flex-grow flex flex-col">
-          <div className="flex-grow">
+        <main className="flex-grow flex flex-col p-24 mx-24">
             <Routes>
               <Route path="/" element={<Home />} />
               <Route path="/about" element={<About />} />
@@ -118,11 +117,10 @@ function App() {
                 element={<Projects projects={projects} />}
               />
               <Route
-                path="/projects/:title"
-                element={<ProjectDetails projects={projects} />}
+                path="/projects/:id"
+                element={<ProjectDetails />}
               />
             </Routes>
-          </div>
         </main>
       </Router>
     </div>
