@@ -15,15 +15,15 @@ const ProjectDetails = () => {
     <div className="flex flex-col">
       {/* TO-DO: add back button */}
       <div className='flex flex-col justify-between items-start mb-16 gap-2'> 
-      <Link to="/" className="text-primary  font-medium">back</Link>
-      <h1 className="font-bold text-5xl md:text-5xl bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent w-fit pb-1 md:pb-2 ">
+      <Link to="/" className="text-primary font-medium">back</Link>
+      <h1 className="font-bold text-3xl md:text-5xl bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent w-fit pb-1 md:pb-2 ">
         {project.title}
       </h1>
       
       </div>
-      <div className="container flex flex-col items-center gap-4 text-text text-base font-medium">
+      <div className="container flex flex-col items-center gap-4 text-text text-sm md:text-base font-medium">
         {project.videoUrl ? (
-          <div className="w-full aspect-w-16 md:aspect-h-9">
+          <div className="w-full aspect-w-16 aspect-h-9">
             <iframe 
               src={project.videoUrl}
               className="w-full h-full border" 
@@ -40,7 +40,7 @@ const ProjectDetails = () => {
             className= "shadow-lg border"
           />
       )}
-        <div className= "w-3/4 p-2">
+        <div className= "md:w-3/4 p-2">
           {project.deployedLink ? (
             <p className="font-bold text-primary hover:underline mb-4">
               <a href={project.deployedLink} target="_blank" rel="noopener noreferrer">Try it!</a>
@@ -55,8 +55,8 @@ const ProjectDetails = () => {
             </p>
           )}
           {project.skills && (
-            <p className="mt-5">
-              <strong>Skills:</strong> {project.skills.join(", ")}
+            <p className="mt-5 font-normal">
+              Skills: {project.skills.join(", ")}
             </p>
           )}
         </div>
