@@ -2,7 +2,7 @@ import artventure from "../assets/ARTventure.jpeg";
 import mayaaska from "../assets/MayaAska.png";
 import uicopilot from "../assets/ui-copilot.png";
 import uclta from "../assets/ucl-ta.png";
-import pilates2 from "../assets/pilates2.png";
+import pilates2 from "../assets/pilates.png";
 import bidbuybuild from "../assets/bidbuybuild.png";
 import humanitarian from "../assets/humanitarian.png";
 

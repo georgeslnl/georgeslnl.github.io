@@ -2,8 +2,6 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import About from "./Pages/About";
 import Home from "./Pages/Home";
 import ScrollToTop from "./Components/ScrollToTop";
-import Projects from "./Pages/Projects";
-import Header from "./Components/Header";
 import ProjectDetails from "./Pages/ProjectDetails";
 
 function App() {
@@ -16,10 +14,6 @@ function App() {
             <Routes>
               <Route path="/" element={<Home />} />
               <Route path="/about-me" element={<About />} />
-              {/* <Route
-                path="/projects"
-                element={<Projects projects={projects} />}
-              /> */}
               <Route
                 path="/projects/:id"
                 element={<ProjectDetails />}

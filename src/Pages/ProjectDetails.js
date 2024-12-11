@@ -13,7 +13,6 @@ const ProjectDetails = () => {
 
   return (
     <div className="flex flex-col">
-      {/* TO-DO: add back button */}
       <div className='flex flex-col justify-between items-start mb-16 gap-2'> 
       <Link to="/" className="text-primary font-medium">back</Link>
       <h1 className="font-bold text-3xl md:text-5xl bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent w-fit pb-1 md:pb-2 ">
@@ -42,7 +41,7 @@ const ProjectDetails = () => {
       )}
         <div className= "md:w-3/4 p-2">
           {project.deployedLink ? (
-            <p className="font-bold text-primary hover:underline mb-4">
+            <p className="font-bold text-primary hover:underline w-fit mb-4">
               <a href={project.deployedLink} target="_blank" rel="noopener noreferrer">Try it!</a>
             </p>
           ) : null}
@@ -50,7 +49,7 @@ const ProjectDetails = () => {
             <p key={index} className="text-text-950 mt-4">{paragraph}</p>
           ))}
           {project.github && (
-            <p className="font-bold text-primary hover:underline mt-4">
+            <p className="font-bold text-primary hover:underline w-fit mt-4">
               <a href={project.github} target="_blank" rel="noopener noreferrer">GitHub Repository</a>
             </p>
           )}

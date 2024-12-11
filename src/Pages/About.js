@@ -1,7 +1,8 @@
 // src/Pages/About.js
 import React from "react";
 import { Link } from "react-router-dom";
-import georges from "../assets/georges2.jpg";
+import georges from "../assets/georges.png";
+import cv from "../assets/Georges_Linel_CV.pdf";
 
 const About = () => {
   return (
@@ -15,11 +16,7 @@ const About = () => {
         </h1>
       </div>
       <div className="flex flex-col gap-6 text-text text-sm md:text-base">
-        <img
-          src={georges}
-          alt="Georges Linel"
-          className="w-2/4 md:w-1/3"
-        />
+        <img src={georges} alt="Georges Linel" className="w-2/4 md:w-1/3" />
         <p className="font-medium">
           Hi! I'm Georges, a Computer Science MSc graduate living in London.
         </p>
@@ -40,10 +37,17 @@ const About = () => {
           professionalism.
         </p>
         <p>
-          I am most proficient with Python and Javascript/Typescript. I enjoy both
-          frontend and backend development, and have used React alongside various
-          tools for projects.
+          I am most proficient with Python and Javascript/Typescript. I enjoy
+          both frontend and backend development, and have used React alongside
+          various tools for projects.
         </p>
+        <a
+          className="font-bold w-fit text-primary hover:underline"
+          href={cv}
+          download="Georges_Linel_CV.pdf"
+        >
+          Download my CV
+        </a>
       </div>
     </div>
   );
