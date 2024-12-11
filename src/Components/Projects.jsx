@@ -5,7 +5,7 @@ import projectsData from '../data/projectsData';
 const Projects = () => {
 
   return (
-    <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 gap-y-12 w-5/6 m-auto">
+    <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 mt-16">
       {projectsData.map((project, index) => (
         <ProjectCard
           key={index}
