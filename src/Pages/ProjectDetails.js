@@ -1,6 +1,7 @@
 import React from 'react';
 import { useParams } from 'react-router-dom';
 import projects from '../data/projectsData';
+import { Link } from 'react-router-dom';
 
 const ProjectDetails = () => {
   const { id } = useParams();
@@ -13,9 +14,13 @@ const ProjectDetails = () => {
   return (
     <div className="flex flex-col">
       {/* TO-DO: add back button */}
-      <h1 className="font-bold text-5xl md:text-5xl bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent w-fit pb-1 md:pb-2 mb-16">
+      <div className='flex flex-col justify-between items-start mb-16 gap-2'> 
+      <Link to="/" className="text-primary  font-medium">back</Link>
+      <h1 className="font-bold text-5xl md:text-5xl bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent w-fit pb-1 md:pb-2 ">
         {project.title}
       </h1>
+      
+      </div>
       <div className="container flex flex-col items-center gap-4 text-text text-base font-medium">
         {project.videoUrl ? (
           <div className="w-full aspect-w-16 md:aspect-h-9">
@@ -36,11 +41,8 @@ const ProjectDetails = () => {
           />
       )}
         <div className= "w-3/4 p-2">
-          {/* <p className=" italic">{project.date}</p> */}
-          <p className="">{project.shortDescription}</p>
-          {/* TO-DO: add icon */}
           {project.deployedLink ? (
-            <p className="font-semibold underline mb-4">
+            <p className="font-bold text-primary hover:underline mb-4">
               <a href={project.deployedLink} target="_blank" rel="noopener noreferrer">Try it!</a>
             </p>
           ) : null}
@@ -48,7 +50,7 @@ const ProjectDetails = () => {
             <p key={index} className="text-text-950 mt-4">{paragraph}</p>
           ))}
           {project.github && (
-            <p className="font-bold mt-4">
+            <p className="font-bold text-primary hover:underline mt-4">
               <a href={project.github} target="_blank" rel="noopener noreferrer">GitHub Repository</a>
             </p>
           )}

@@ -5,14 +5,17 @@ import LearnMore from "../Components/LearnMoreButton";
 import ExploreProjectsButton from "../Components/ExploreProjectsButton";
 import { IoMail } from "react-icons/io5";
 import artventure from "../assets/ARTventure.jpeg";
+import { Link } from "react-router-dom";
 
 const Home = () => {
   return (
     <div className="">
-        
-          <h1 className="font-bold text-5xl md:text-5xl bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent w-fit pb-1 md:pb-2 mb-16">
+      <div className='flex flex-col justify-between items-start mb-16 gap-2'> 
+        <Link to="/about" className="text-primary font-medium">about</Link>
+          <h1 className="font-bold text-5xl md:text-5xl bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent w-fit pb-1 md:pb-2">
             Georges Linel
           </h1>
+          </div>
           {/* <img
             src={georgesImage}
             alt="Georges Linel"
