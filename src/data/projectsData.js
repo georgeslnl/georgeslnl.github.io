@@ -14,6 +14,12 @@ const projectsData = [
     title: "Maya-Aska Portfolio",
     date: "2024 - now",
     description: "Portfolio website for a photographer.",
+    abstract:
+        "Maya-Aska is a London-based photographer. She requested a portfolio website to showcase her work. \n\n\n\nA sleek and elegant design was chosen to highlight her photography.",
+    skills: ["NextJS", "Tailwind CSS", "JavaScript"],
+    github: "https://github.com/georgeslnl/maya-aska-portfolio",
+    deployedLink: "https://maya-aska-portfolio-git-development-georges-projects-d90b908b.vercel.app/",
+
   },
   {
     id: "ui-copilot",
