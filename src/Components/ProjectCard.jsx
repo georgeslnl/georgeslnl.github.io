@@ -1,20 +1,16 @@
-import React from "react";
-import { Link } from "react-router-dom";
+import React from 'react';
 
-const ProjectCard = ({ project }) => {
-    return (
-        <Link to={`/projects/${project.id}`} className="block">
-            <div className="flex flex-col gap-4 rounded-lg p-6 w-full bg-secondary-50 hover:bg-secondary-100 shadow-xl hover:shadow-2xl border transition-all duration-300 animate-fadeInUpBig">
-                <h2 className="text-lg md:text-2xl text-text-950 font-bold mb-2">{project.title}</h2>
-                <p className="text-sm md:text-xl text-text-900">{project.shortDescription}</p>
-                {project.skills && (
-                    <p className="text-xs md:text-lg text-text-800">
-                        Skills: {project.skills.join(", ")}
-                    </p>
-                )}
-            </div>
-        </Link>
-    );
+const ProjectCard = ({ image, altText, title, date, description }) => {
+  return (
+    <div className="flex flex-col gap-3 rounded-lg w-full text-text">
+      <img src={image} alt={altText} className="border"/>
+      <div className="flex justify-between items-center gap-4">
+        <h2 className="text-base font-bold">{title}</h2>
+        <h3 className="text-gray-400 text-base">{date}</h3>
+      </div>
+      <p className="text-base">{description}</p>
+    </div>
+  );
 };
 
 export default ProjectCard;
