@@ -13,7 +13,7 @@ const ProjectCard = ({ id, image, altText, title, date, description }) => {
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true }}
-            transition={{ delay: 0.1, duration: 1 }}
+            transition={{ delay: 0.1, duration: 0.5}}
         >
             <Link to={`/projects/${id}`}>
                 <img src={image} alt={altText} className="border cursor-pointer hover:shadow-lg transition-all" />

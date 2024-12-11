@@ -1,5 +1,6 @@
 // src/Pages/About.js
 import React from "react";
+import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
 import georges from "../assets/georges.png";
 import cv from "../assets/Georges_Linel_CV.pdf";
@@ -15,7 +16,17 @@ const About = () => {
           About Me
         </h1>
       </div>
-      <div className="flex flex-col gap-6 text-text text-sm md:text-base">
+      <motion.div
+        className="flex flex-col gap-6 text-text text-sm md:text-base"
+        variants={{
+          hidden: { opacity: 0, y: 20 },
+          visible: { opacity: 1, y: 0 },
+        }}
+        initial="hidden"
+        whileInView="visible"
+        viewport={{ once: true }}
+        transition={{ delay: 0.1, duration: 0.5 }}
+      >
         <img src={georges} alt="Georges Linel" className="w-2/4 md:w-1/3" />
         <p className="font-medium">
           Hi! I'm Georges, a Computer Science MSc graduate living in London.
@@ -48,7 +59,7 @@ const About = () => {
         >
           Download my CV
         </a>
-      </div>
+      </motion.div>
     </div>
   );
 };
