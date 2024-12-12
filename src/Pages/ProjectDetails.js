@@ -21,7 +21,7 @@ const ProjectDetails = () => {
         className="container flex flex-col items-center gap-4 text-text text-sm md:text-base font-medium"
       >
         {project.videoUrl ? (
-          <motion.div className="w-full aspect-w-16 aspect-h-9"
+          <motion.div className="w-full md:w-3/4 aspect-w-16 aspect-h-9"
           variants={{
             hidden: { opacity: 0, y: 20 },
             visible: { opacity: 1, y: 0 },
@@ -43,7 +43,7 @@ const ProjectDetails = () => {
           <motion.img
             src={project.image}
             alt={project.title}
-            className="shadow-lg border"
+            className="shadow-lg border md:w-3/4"
             variants={{
               hidden: { opacity: 0, y: 20 },
               visible: { opacity: 1, y: 0 },
@@ -103,7 +103,7 @@ const ProjectDetails = () => {
           <motion.img
             src={project.image}
             alt={project.title}
-            className="shadow-lg border"
+            className="shadow-lg border md:w-3/4"
             variants={{
               hidden: { opacity: 0, y: 20 },
               visible: { opacity: 1, y: 0 },

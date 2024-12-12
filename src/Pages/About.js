@@ -14,7 +14,7 @@ const About = () => {
     <div className="flex flex-col">
       <PageHeader title="About Me"/>
       <motion.div
-        className="flex flex-col gap-6 text-text text-sm md:text-base"
+        className="flex flex-col gap-6 text-text text-sm md:text-base md:w-3/4"
         variants={{
           hidden: { opacity: 0, y: 20 },
           visible: { opacity: 1, y: 0 },
@@ -24,7 +24,7 @@ const About = () => {
         viewport={{ once: true }}
         transition={{ delay: 0.1, duration: 0.5 }}
       >
-        <img src={georges} alt="Georges Linel" className="w-2/4 md:w-1/3" />
+        <img src={georges} alt="Georges Linel" className="w-2/4 md:w-1/2 border" />
         <p className="font-medium">
           Hi! I'm Georges, a Computer Science MSc graduate living in London.
         </p>
