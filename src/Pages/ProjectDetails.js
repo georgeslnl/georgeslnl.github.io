@@ -3,6 +3,8 @@ import { useParams } from "react-router-dom";
 import projects from "../data/projectsData";
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
+import { FaLongArrowAltRight } from "react-icons/fa";
+
 
 const ProjectDetails = () => {
   const { id } = useParams();
@@ -71,15 +73,16 @@ const ProjectDetails = () => {
         >
         
           {project.deployedLink ? (
-            <p className="font-bold text-primary hover:underline w-fit mb-4">
+            <div className="flex flex-row items-center cursor-pointer font-bold text-primary w-fit hover:underline mb-4 gap-1">
               <a
                 href={project.deployedLink}
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                Try it!
+                Try it
               </a>
-            </p>
+            <FaLongArrowAltRight />
+            </div>
           ) : null}
           {project.abstract.split("\n\n").map((paragraph, index) => (
             <p key={index} className="text-text-950 mt-4">
