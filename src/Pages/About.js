@@ -1,34 +1,18 @@
 // src/Pages/About.js
 import React from "react";
 import { motion } from "framer-motion";
-import { Link } from "react-router-dom";
 import georges from "../assets/georges.png";
 import cv from "../assets/Georges_Linel_CV.pdf";
 import { FaLinkedin } from "react-icons/fa";
 import { FaGithubSquare } from "react-icons/fa";
+import PageHeader from "../Components/PageHeader";
 
 
 
 const About = () => {
   return (
     <div className="flex flex-col">
-      <motion.div className="flex flex-col justify-between items-start mb-16 gap-2"
-        variants={{
-          hidden: { opacity: 0, },
-          visible: { opacity: 1},
-        }}
-        initial="hidden"
-        whileInView="visible"
-        viewport={{ once: true }}
-        transition={{ delay: 0.1, duration: 0.5 }}
-      >
-        <Link to="/" className="text-primary font-medium hover:scale-110 transition-transform">
-          back
-        </Link>
-        <h1 className="font-bold text-3xl md:text-5xl bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent w-fit pb-1 md:pb-2">
-          About Me
-        </h1>
-      </motion.div>
+      <PageHeader title="About Me"/>
       <motion.div
         className="flex flex-col gap-6 text-text text-sm md:text-base"
         variants={{

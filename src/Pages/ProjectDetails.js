@@ -1,9 +1,9 @@
 import React from "react";
 import { useParams } from "react-router-dom";
 import projects from "../data/projectsData";
-import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
 import { FaLongArrowAltRight } from "react-icons/fa";
+import PageHeader from "../Components/PageHeader";
 
 
 const ProjectDetails = () => {
@@ -16,23 +16,7 @@ const ProjectDetails = () => {
 
   return (
     <div className="flex flex-col">
-      <motion.div className="flex flex-col justify-between items-start mb-16 gap-2"
-        variants={{
-          hidden: { opacity: 0, },
-          visible: { opacity: 1},
-        }}
-        initial="hidden"
-        whileInView="visible"
-        viewport={{ once: true }}
-        transition={{ delay: 0.1, duration: 0.5 }}
-      >
-        <Link to="/" className="text-primary font-medium hover:scale-110 transition-transform">
-          back
-        </Link>
-        <h1 className="font-bold text-3xl md:text-5xl bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent w-fit pb-1 md:pb-2 ">
-          {project.title}
-        </h1>
-      </motion.div>
+      <PageHeader title={project.title} />
       <div
         className="container flex flex-col items-center gap-4 text-text text-sm md:text-base font-medium"
       >
