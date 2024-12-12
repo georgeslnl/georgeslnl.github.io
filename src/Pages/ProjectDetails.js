@@ -16,14 +16,23 @@ const ProjectDetails = () => {
 
   return (
     <div className="flex flex-col">
-      <div className="flex flex-col justify-between items-start mb-16 gap-2">
-        <Link to="/" className="text-primary font-medium">
+      <motion.div className="flex flex-col justify-between items-start mb-16 gap-2"
+        variants={{
+          hidden: { opacity: 0, },
+          visible: { opacity: 1},
+        }}
+        initial="hidden"
+        whileInView="visible"
+        viewport={{ once: true }}
+        transition={{ delay: 0.1, duration: 0.5 }}
+      >
+        <Link to="/" className="text-primary font-medium hover:scale-110 transition-transform">
           back
         </Link>
         <h1 className="font-bold text-3xl md:text-5xl bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent w-fit pb-1 md:pb-2 ">
           {project.title}
         </h1>
-      </div>
+      </motion.div>
       <div
         className="container flex flex-col items-center gap-4 text-text text-sm md:text-base font-medium"
       >
@@ -73,7 +82,7 @@ const ProjectDetails = () => {
         >
         
           {project.deployedLink ? (
-            <div className="flex flex-row items-center cursor-pointer font-bold text-primary w-fit hover:underline mb-4 gap-1">
+            <div className="flex flex-row items-center cursor-pointer font-bold text-primary w-fit hover:scale-110 transition-transform mb-4 gap-1">
               <a
                 href={project.deployedLink}
                 target="_blank"
@@ -90,7 +99,7 @@ const ProjectDetails = () => {
             </p>
           ))}
           {project.github && (
-            <p className="font-bold text-primary hover:underline w-fit mt-4">
+            <p className="font-bold text-primary hover:scale-110 transition-transform w-fit mt-4">
               <a
                 href={project.github}
                 target="_blank"
