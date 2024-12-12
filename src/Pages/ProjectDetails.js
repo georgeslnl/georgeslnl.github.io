@@ -1,6 +1,5 @@
 import React from "react";
-import { useParams } from "react-router-dom";
-import projects from "../data/projectsData";
+import { useParams, Navigate } from "react-router-dom";import projects from "../data/projectsData";
 import { motion } from "framer-motion";
 import { FaLongArrowAltRight } from "react-icons/fa";
 import PageHeader from "../Components/PageHeader";
@@ -11,7 +10,7 @@ const ProjectDetails = () => {
   const project = projects.find((p) => p.id === id);
 
   if (!project) {
-    return <div>Project not found</div>;
+    return <Navigate to="/404" replace />;
   }
 
   return (
@@ -72,7 +71,7 @@ const ProjectDetails = () => {
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                Try it
+                View
               </a>
             <FaLongArrowAltRight />
             </div>
