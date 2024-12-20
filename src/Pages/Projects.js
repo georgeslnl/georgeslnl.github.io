@@ -1,8 +1,13 @@
+
 import React from 'react';
 import ProjectCard from '../Components/ProjectCard';
 import projectsData from '../data/projectsData';
 
+
+
 const Projects = () => {
+
+  
 
   return (
     <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
@@ -15,6 +20,7 @@ const Projects = () => {
           title={project.title}
           date={project.date}
           description={project.description}
+          
         />
       ))}
     </div>

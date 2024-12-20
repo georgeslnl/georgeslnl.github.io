@@ -1,8 +1,11 @@
 import React from "react";
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
+import useSound from 'use-sound';
+import tap from '../assets/tap.mp3';
 
 const PageHeader = ({ title, backLink = "/" }) => {
+  const [play] = useSound(tap);
   return (
     <motion.div 
       className="flex flex-col justify-between items-start mb-16 gap-2"
@@ -14,6 +17,7 @@ const PageHeader = ({ title, backLink = "/" }) => {
       whileInView="visible"
       viewport={{ once: true }}
       transition={{ delay: 0.1, duration: 0.5 }}
+      onClick={play}
     >
       <Link 
         to={backLink} 
