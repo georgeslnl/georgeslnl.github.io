@@ -11,20 +11,20 @@ import bidbuybuild from "../assets/bidbuybuild.png";
 import humanitarian from "../assets/humanitarian.png";
 
 const projectsData = [
-  {
-    id: "maya-aska",
-    images: [mayaaska, mayaaska1, mayaaska2],
-    altText: "Portfolio website for a photographer",
-    title: "Maya-Aska Portfolio",
-    date: "2024 - now",
-    description: "Portfolio website for a photographer.",
-    abstract:
-        "This is a modern, responsive portfolio website for fashion photographer Maya-Aska, built using Next.js and Tailwind CSS. \n\n\n\nA sleek and elegant design was chosen to highlight her work.",
-    skills: ["NextJS", "Tailwind CSS", "JavaScript"],
-    github: "https://github.com/georgeslnl/maya-aska-portfolio",
-    deployedLink: "https://maya-aska-portfolio-git-development-georges-projects-d90b908b.vercel.app/",
+  // {
+  //   id: "maya-aska",
+  //   images: [mayaaska, mayaaska1, mayaaska2],
+  //   altText: "Portfolio website for a photographer",
+  //   title: "Maya-Aska Portfolio",
+  //   date: "2024 - now",
+  //   description: "Portfolio website for a photographer.",
+  //   abstract:
+  //       "This is a modern, responsive portfolio website for fashion photographer Maya-Aska, built using Next.js and Tailwind CSS. \n\n\n\nA sleek and elegant design was chosen to highlight her work.",
+  //   skills: ["NextJS", "Tailwind CSS", "JavaScript"],
+  //   github: "https://github.com/georgeslnl/maya-aska-portfolio",
+  //   deployedLink: "https://maya-aska-portfolio-git-development-georges-projects-d90b908b.vercel.app/",
 
-  },
+  // },
   {
     id: "ui-copilot",
     images: [uicopilot],
