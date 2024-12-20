@@ -17,10 +17,10 @@ const ProjectDetails = () => {
     <div className="flex flex-col">
       <PageHeader title={project.title} />
       <div
-        className="container flex flex-col items-center gap-4 text-text text-sm md:text-base font-medium"
+        className="container flex flex-col items-center gap-4 text-text text-sm  lg:text-base font-medium"
       >
         {project.videoUrl ? (
-          <motion.div className="w-full md:w-3/4 aspect-w-16 aspect-h-9"
+          <motion.div className="w-full  lg:w-3/4 aspect-w-16 aspect-h-9"
           variants={{
             hidden: { opacity: 0, y: 20 },
             visible: { opacity: 1, y: 0 },
@@ -42,7 +42,7 @@ const ProjectDetails = () => {
           <motion.img
             src={project.image}
             alt={project.title}
-            className="shadow-lg border md:w-3/4"
+            className="shadow-lg border  lg:w-3/4"
             variants={{
               hidden: { opacity: 0, y: 20 },
               visible: { opacity: 1, y: 0 },
@@ -53,7 +53,7 @@ const ProjectDetails = () => {
             transition={{ delay: 0.1, duration: 0.5 }}
           />
         )}
-        <motion.div className="md:w-3/4 p-2"
+        <motion.div className=" lg:w-3/4 p-2"
         variants={{
           hidden: { opacity: 0, y: 20 },
           visible: { opacity: 1, y: 0 },
@@ -102,7 +102,7 @@ const ProjectDetails = () => {
           <motion.img
             src={project.image}
             alt={project.title}
-            className="shadow-lg border md:w-3/4"
+            className="shadow-lg border  lg:w-3/4"
             variants={{
               hidden: { opacity: 0, y: 20 },
               visible: { opacity: 1, y: 0 },

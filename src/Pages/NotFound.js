@@ -4,7 +4,7 @@ const NotFound = () => {
   return (
     <div className="">
       <PageHeader title="Oops!" backLink="/" />
-      <h1 className="text-xl md:text-2xl font-bold">This page does not exist :(</h1>
+      <h1 className="text-xl  lg:text-2xl font-bold">This page does not exist :(</h1>
     </div>
   );
 };
