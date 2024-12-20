@@ -13,6 +13,11 @@ const ProjectDetails = () => {
     return <Navigate to="/404" replace />;
   }
 
+  const imageAnimation = {
+    hidden: { opacity: 0, y: 20 },
+    visible: { opacity: 1, y: 0 },
+  };
+
   return (
     <div className="flex flex-col">
       <PageHeader title={project.title} />
@@ -20,15 +25,14 @@ const ProjectDetails = () => {
         className="container flex flex-col items-center gap-4 text-text text-sm  lg:text-base font-medium"
       >
         {project.videoUrl ? (
-          <motion.div className="w-full  lg:w-3/4 aspect-w-16 aspect-h-9"
-          variants={{
-            hidden: { opacity: 0, y: 20 },
-            visible: { opacity: 1, y: 0 },
-          }}
-          initial="hidden"
-          whileInView="visible"
-          viewport={{ once: true }}
-          transition={{ delay: 0.1, duration: 0.5 }}>
+          <motion.div 
+            className="w-full lg:w-3/4 aspect-w-16 aspect-h-9"
+            variants={imageAnimation}
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true }}
+            transition={{ delay: 0.1, duration: 0.5 }}
+          >
             <iframe
               src={project.videoUrl}
               className="w-full h-full border"
@@ -38,15 +42,12 @@ const ProjectDetails = () => {
               title={`${project.title}`}
             ></iframe>
           </motion.div>
-        ) : (
+        ) : project.images?.[0] && (
           <motion.img
-            src={project.image}
+            src={project.images[0]}
             alt={project.title}
-            className="shadow-lg border  lg:w-3/4"
-            variants={{
-              hidden: { opacity: 0, y: 20 },
-              visible: { opacity: 1, y: 0 },
-            }}
+            className="shadow-lg border lg:w-3/4"
+            variants={imageAnimation}
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true }}
@@ -54,10 +55,7 @@ const ProjectDetails = () => {
           />
         )}
         <motion.div className=" lg:w-3/4 p-2"
-        variants={{
-          hidden: { opacity: 0, y: 20 },
-          visible: { opacity: 1, y: 0 },
-        }}
+        variants={imageAnimation}
         initial="hidden"
         whileInView="visible"
         viewport={{ once: true }}
@@ -98,20 +96,23 @@ const ProjectDetails = () => {
             </p>
           )}
         </motion.div>
-        {project.videoUrl && (
-          <motion.img
-            src={project.image}
-            alt={project.title}
-            className="shadow-lg border  lg:w-3/4"
-            variants={{
-              hidden: { opacity: 0, y: 20 },
-              visible: { opacity: 1, y: 0 },
-            }}
-            initial="hidden"
-            whileInView="visible"
-            viewport={{ once: true }}
-            transition={{ delay: 0.1, duration: 0.5 }}
-          />
+        {project.images && project.images.length > 0 && (
+          <div className="w-full lg:w-3/4 grid grid-cols-1 gap-8">
+            {/* If there's a video, show all images. If no video, show all images except the first one */}
+            {(project.videoUrl ? project.images : project.images.slice(1)).map((image, index) => (
+              <motion.img
+                key={index}
+                src={image}
+                alt={`${project.title} - Image ${index + 1}`}
+                className="shadow-lg border w-full"
+                variants={imageAnimation}
+                initial="hidden"
+                whileInView="visible"
+                viewport={{ once: true }}
+                transition={{ delay: 0.1, duration: 0.5 }}
+              />
+            ))}
+          </div>
         )}
       </div>
     </div>

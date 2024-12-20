@@ -15,7 +15,7 @@ const Projects = () => {
         <ProjectCard
           key={index}
           id={project.id}
-          image={project.image}
+          images={project.images}
           altText={project.altText}
           title={project.title}
           date={project.date}

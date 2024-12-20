@@ -1,15 +1,19 @@
 import artventure from "../assets/ARTventure.jpeg";
 import mayaaska from "../assets/MayaAska.png";
+import mayaaska1 from "../assets/MayaAska1.png";
+import mayaaska2 from "../assets/MayaAska2.png";
 import uicopilot from "../assets/ui-copilot.png";
-import uclta from "../assets/ucl-ta.png";
-import pilates2 from "../assets/pilates.png";
+import uclta1 from "../assets/ucl-ta-1.png";
+import uclta2 from "../assets/ucl-ta-2.png";
+import uclta3 from "../assets/ucl-ta-3.png";
+import pilates from "../assets/pilates.png";
 import bidbuybuild from "../assets/bidbuybuild.png";
 import humanitarian from "../assets/humanitarian.png";
 
 const projectsData = [
   {
     id: "maya-aska",
-    image: mayaaska,
+    images: [mayaaska, mayaaska1, mayaaska2],
     altText: "Portfolio website for a photographer",
     title: "Maya-Aska Portfolio",
     date: "2024 - now",
@@ -23,7 +27,7 @@ const projectsData = [
   },
   {
     id: "ui-copilot",
-    image: uicopilot,
+    images: [uicopilot],
     altText: "Visual Studio Code extension",
     title: "UI Copilot",
     date: "2024",
@@ -36,7 +40,7 @@ const projectsData = [
   },
   {
     id: "artventure",
-    image: artventure,
+    images: [artventure],
     altText: "ARTventure project",
     title: "ARTventure.",
     date: "2024 - now",
@@ -54,7 +58,7 @@ const projectsData = [
   },
   {
     id: "ucl-ta-recruitment",
-    image: uclta,
+    images: [uclta1, uclta2, uclta3],
     altText: "UCL TA recruitment",
     title: "UCL TA CS recruitment",
     date: "2024",
@@ -67,7 +71,7 @@ const projectsData = [
   },
   {
     id: "pilates",
-    image: pilates2,
+    images: [pilates],
     altText: "Pilates booking website",
     title: "\\Pilates",
     date: "2024",
@@ -84,7 +88,7 @@ const projectsData = [
   },
   {
     id: "bid-buy-build",
-    image: bidbuybuild,
+    images: [bidbuybuild],
     altText: "Auction-based website for buying and selling furniture",
     title: "Bid, Buy, Build",
     date: "2023",
@@ -96,7 +100,7 @@ const projectsData = [
   },
   {
     id: "humanitarian-management-system",
-    image: humanitarian,
+    images: [humanitarian],
     altText: "CLI application",
     title: "Humanitarian Management System",
     date: "2023",

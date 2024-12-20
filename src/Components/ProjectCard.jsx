@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 import useSound from 'use-sound';
 import tap from '../assets/tap.mp3';
 
-const ProjectCard = ({ id, image, altText, title, date, description }) => {
+const ProjectCard = ({ id, images, altText, title, date, description }) => {
     const [play] = useSound(tap);
     return (
         <motion.div
@@ -20,7 +20,7 @@ const ProjectCard = ({ id, image, altText, title, date, description }) => {
             onClick={play}
         >
             <Link to={`/projects/${id}`}>
-                <img src={image} alt={altText} className="border cursor-pointer hover:shadow-lg transition-all" />
+                <img src={images?.[0]} alt={altText} className="border cursor-pointer hover:shadow-lg transition-all hover:scale-95 duration-300" />
             </Link>
             <div className="flex justify-between">
                 <h2 className="text-sm  lg:text-base font-bold">{title}</h2>
