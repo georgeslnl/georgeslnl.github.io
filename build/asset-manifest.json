@@ -1,0 +1,31 @@
+{
+  "files": {
+    "main.css": "/static/css/main.9f79dfab.css",
+    "main.js": "/static/js/main.5b72deb6.js",
+    "static/js/885.f5ec09b5.chunk.js": "/static/js/885.f5ec09b5.chunk.js",
+    "static/js/453.1407b060.chunk.js": "/static/js/453.1407b060.chunk.js",
+    "static/media/MayaAska.png": "/static/media/MayaAska.b055d38fba3391b22b2e.png",
+    "static/media/MayaAska1.png": "/static/media/MayaAska1.45345e9a638f421ec6e4.png",
+    "static/media/MayaAska2.png": "/static/media/MayaAska2.f8bddb4d3c62ab125b01.png",
+    "static/media/pilates.png": "/static/media/pilates.5533b5892cd18142d45d.png",
+    "static/media/georges.png": "/static/media/georges.08eee098cdfbfc4fe989.png",
+    "static/media/humanitarian.png": "/static/media/humanitarian.99798b68ed8ed9e5c174.png",
+    "static/media/bidbuybuild.png": "/static/media/bidbuybuild.26b4ae2a0b1a367e3be1.png",
+    "static/media/ucl-ta-1.png": "/static/media/ucl-ta-1.24a3f00abccf796f80d0.png",
+    "static/media/ucl-ta-2.png": "/static/media/ucl-ta-2.69b52515266f3ab84bf0.png",
+    "static/media/ucl-ta-3.png": "/static/media/ucl-ta-3.1cf6275fd448ddedb8e8.png",
+    "static/media/ARTventure.jpeg": "/static/media/ARTventure.b91777184b76e749126e.jpeg",
+    "static/media/ui-copilot.png": "/static/media/ui-copilot.757008730f8cb4c2e1d0.png",
+    "static/media/Georges_Linel_CV.pdf": "/static/media/Georges_Linel_CV.6c5b86b8945a3921a293.pdf",
+    "static/media/tap.mp3": "/static/media/tap.86d097eb9429bbc2989d.mp3",
+    "index.html": "/index.html",
+    "main.9f79dfab.css.map": "/static/css/main.9f79dfab.css.map",
+    "main.5b72deb6.js.map": "/static/js/main.5b72deb6.js.map",
+    "885.f5ec09b5.chunk.js.map": "/static/js/885.f5ec09b5.chunk.js.map",
+    "453.1407b060.chunk.js.map": "/static/js/453.1407b060.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.9f79dfab.css",
+    "static/js/main.5b72deb6.js"
+  ]
+}
