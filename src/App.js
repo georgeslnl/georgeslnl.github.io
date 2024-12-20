@@ -5,12 +5,13 @@ import ScrollToTop from "./Components/ScrollToTop";
 import ProjectDetails from "./Pages/ProjectDetails";
 import NotFound from "./Pages/NotFound";
 
+// TO-DO: SEO implementation
 function App() {
   return (
     <div className="min-h-screen flex flex-col">
       <Router>
         <ScrollToTop />
-        <main className="flex-grow flex flex-col p-12 md:p-24 md:mx-24">
+        <main className="flex-grow flex flex-col p-12 md:p-24 lg:mx-24">
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/about-me" element={<About />} />
