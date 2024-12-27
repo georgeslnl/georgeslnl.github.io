@@ -17,11 +17,12 @@ const PageHeader = ({ title, backLink = "/" }) => {
       whileInView="visible"
       viewport={{ once: true }}
       transition={{ delay: 0.1, duration: 0.5 }}
-      onClick={play}
+      
     >
       <Link 
         to={backLink} 
         className="text-primary font-medium hover:scale-110 transition-transform"
+        onClick={play}
       >
         {backLink === "/about-me" ? "about me" : "back"}
       </Link>
