@@ -21,12 +21,12 @@ const PageHeader = ({ title, backLink = "/" }) => {
     >
       <Link 
         to={backLink} 
-        className="text-primary font-medium hover:scale-110 transition-transform"
+        className="text-primary font-medium hover:scale-110"
         onClick={play}
       >
         {backLink === "/about-me" ? "about me" : "back"}
       </Link>
-      <h1 className="font-bold text-3xl  lg:text-5xl bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent w-fit pb-1  lg:pb-2">
+      <h1 className="font-bold text-3xl lg:text-5xl bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent w-fit pb-1  lg:pb-2">
         {title}
       </h1>
     </motion.div>

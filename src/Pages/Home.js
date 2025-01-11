@@ -5,7 +5,7 @@ import PageHeader from "../Components/PageHeader";
 const Home = () => {
   return (
     <div>
-      <PageHeader title="Georges" backLink="/about-me" />
+      <PageHeader title="Georges Linel" backLink="/about-me" />
       <Projects />
     </div>
   );
