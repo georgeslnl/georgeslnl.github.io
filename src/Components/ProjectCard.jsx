@@ -20,7 +20,7 @@ const ProjectCard = ({ id, images, altText, title, date, description }) => {
             onClick={play}
         >
             <Link to={`/projects/${id}`}>
-                <img src={images?.[0]} alt={altText} className="border cursor-pointer hover:shadow-lg transition-all hover:scale-95 duration-300" />
+                <img src={images?.[0]} alt={altText} className="border hover:shadow-lg transition-all hover:scale-95 duration-300" />
             </Link>
             <div className="flex justify-between">
                 <h2 className="text-sm  lg:text-base font-bold">{title}</h2>
