@@ -25,7 +25,7 @@ const ProjectCard = ({ id, images, altText, title, date, description, newProject
             <div className="flex justify-between">
                 <div className="flex justify-start items-center gap-2 group">
                     {newProject ? (
-                        <span className="bg-accent rounded-full px-3 text-xs text-primary border border-primary font-bold group-hover:scale-105 transition-transform duration-200">
+                        <span className="bg-accent rounded-full px-2 lg:px-3 text-xs text-primary border border-primary font-bold group-hover:scale-105 transition-transform duration-200">
                             New !
                         </span>
                     ) : null}
