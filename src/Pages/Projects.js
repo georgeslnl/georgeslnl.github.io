@@ -20,7 +20,7 @@ const Projects = () => {
           title={project.title}
           date={project.date}
           description={project.description}
-          
+          newProject={project.newProject}
         />
       ))}
     </div>
