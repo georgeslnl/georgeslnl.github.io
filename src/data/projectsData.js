@@ -22,7 +22,7 @@ const projectsData = [
         "This is a modern, responsive portfolio website for fashion photographer Maya-Aska, built using Next.js for image optimisation. \n\n\n\nA sleek and elegant design was chosen to highlight her work.",
     skills: ["NextJS", "Tailwind CSS", "JavaScript"],
     github: "https://github.com/georgeslnl/maya-aska-portfolio",
-    deployedLink: "https://maya-aska-portfolio.vercel.app/",
+    deployedLink: "https://www.mayaxaska.com/",
     newProject: true,
   },
   {
