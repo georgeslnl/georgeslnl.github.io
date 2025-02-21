@@ -1,7 +1,7 @@
 // src/Pages/About.js
 import React from "react";
 import { motion } from "framer-motion";
-import georges from "../assets/georges.png";
+import georges from "../assets/georges.jpeg";
 import cv from "../assets/Georges_Linel_CV.pdf";
 import { FaLinkedin } from "react-icons/fa";
 import { FaGithubSquare } from "react-icons/fa";
@@ -48,6 +48,9 @@ const About = () => {
           I am most proficient with Python and Javascript/Typescript. I enjoy
           both frontend and backend development, and have used React alongside
           various tools for projects.
+        </p>
+        <p>
+          In my free time, I enjoy reading and discussing books with friends.
         </p>
         <a
           className="font-bold w-fit text-primary hover:scale-110 transition-transform"
