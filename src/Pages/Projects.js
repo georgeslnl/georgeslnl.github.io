@@ -1,5 +1,4 @@
 
-import React from 'react';
 import ProjectCard from '../Components/ProjectCard';
 import projectsData from '../data/projectsData';
 

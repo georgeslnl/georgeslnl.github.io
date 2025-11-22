@@ -2,7 +2,8 @@ import artventure from "../assets/ARTventure.jpeg";
 import mayaaska from "../assets/MayaAska.png";
 import mayaaska1 from "../assets/MayaAska1.png";
 import mayaaska2 from "../assets/MayaAska2.png";
-import uicopilot from "../assets/ui-copilot.png";
+import uicopilot1 from "../assets/ui-copilot1.jpeg"
+import uicopilot2 from "../assets/ui-copilot2.png";
 import uclta1 from "../assets/ucl-ta-1.png";
 import uclta2 from "../assets/ucl-ta-2.png";
 import uclta3 from "../assets/ucl-ta-3.png";
@@ -27,7 +28,7 @@ const projectsData = [
   },
   {
     id: "ui-copilot",
-    images: [uicopilot],
+    images: [uicopilot1, uicopilot2],
     altText: "Visual Studio Code extension",
     title: "UI Copilot",
     date: "2024",

@@ -1,5 +1,4 @@
 import { motion } from 'framer-motion';
-import React from 'react';
 import { Link } from 'react-router-dom';
 import useSound from 'use-sound';
 import tap from '../assets/tap.mp3';
@@ -20,7 +19,7 @@ const ProjectCard = ({ id, images, altText, title, date, description, newProject
 
         >
             <Link to={`/projects/${id}`} onClick={play} className="border hover:shadow-lg transition-all hover:scale-95 duration-300" >
-                <img src={images?.[0]} alt={altText} />
+                <img src={images?.[0]} alt={altText} className="lg:w-full lg:h-[300px] lg:object-cover" />
             </Link>
             <div className="flex justify-between">
                 <div className="flex justify-start items-center gap-2 group">

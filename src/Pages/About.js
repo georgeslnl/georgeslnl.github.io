@@ -1,5 +1,3 @@
-// src/Pages/About.js
-import React from "react";
 import { motion } from "framer-motion";
 import georges from "../assets/georges.jpeg";
 import cv from "../assets/Georges_Linel_CV.pdf";
